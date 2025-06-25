@@ -2,9 +2,9 @@
 1. Set Up the Environment
 conda create -n trading-pipeline python=3.9  
 conda activate trading-pipeline
-pip install psycopg2-binary kafka-python pandas numpy streamlit plotly requests fastapi uvicorn sqlalchemy asyncpg faker schedule  
+pip install psycopg2-binary kafka-python pandas numpy streamlit plotly requests fastapi uvicorn sqlalchemy asyncpg faker schedule
 
-2.Run the following command to start services
+2. Run the following command to start services
 docker-compose up -d  
 
 3. Start the System in 2 Terminals
