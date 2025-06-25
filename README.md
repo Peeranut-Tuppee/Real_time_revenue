@@ -1,4 +1,4 @@
-"# Real_time_revenue" 
+"# Globemart Real Time Revenue Insights" 
 1. Set Up the Environment
     conda create -n trading-pipeline python=3.9  
     conda activate trading-pipeline
