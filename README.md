@@ -60,5 +60,6 @@ GET /api/transactions/hourly — Get hourly transaction activity
 GET /api/transactions — Get list of transactions
 
 System architecture diagram 
+
 Transaction Generator , FX Rates Generator ──▶ PostgreSQL Data Base ──▶ Data Pipeline ──▶ API Server ──▶ Streamlit Dashboard
 
