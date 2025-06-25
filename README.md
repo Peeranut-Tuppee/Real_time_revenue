@@ -60,17 +60,5 @@ GET /api/transactions/hourly — Get hourly transaction activity
 GET /api/transactions — Get list of transactions
 
 System architecture diagram 
-┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐
-│  Transaction    │───▶│    Kafka     │───▶│   PostgreSQL    │
-│   Generator     │    │   Streaming  │    │    Database     │
-└─────────────────┘    └──────────────┘    └─────────────────┘
-                              │                       │
-┌─────────────────┐           │              ┌─────────────────┐
-│   FX Rates      │───────────┘              │  Data Pipeline  │
-│   Generator     │                          │   Processor     │
-└─────────────────┘                          └─────────────────┘
-                                                      │
-┌─────────────────┐    ┌──────────────┐              │
-│   Streamlit     │◀───│   REST API   │◀─────────────┘
-│   Dashboard     │    │   Server     │
-└─────────────────┘    └──────────────┘
+Transaction Generator , FX Rates Generator ──▶ PostgreSQL Data Base ──▶ Data Pipeline ──▶ API Server ──▶ Streamlit Dashboard
+
